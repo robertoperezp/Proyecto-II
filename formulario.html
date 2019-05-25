@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Application Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <style>
+
+      * {
+        margin: auto;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(236, 2, 2);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        background-color: #ffff;
+        padding: 30%;
+        margin: auto;
+        text-align: center;
+        max-width: 30%;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        font-family: Verdana, Arial, Tahoma;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap .form-group {
+        width: 100%;
+        text-align: left;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border-width: 2px;
+      }
+
+      .form-wrap button {
+        width: 100%;
+        padding: 10px;
+        display: block;
+        background-color: #050505;
+        color: #ffff;
+      }
+
+      .form-wrap button:hover {
+        background-color: rgb(236, 2, 2);
+      }
+
+      .form-wrap .bottom-text {
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .letras a{
+        font-family: Verdana, Arial, Tahoma;
+        color: blue;
+      }
+      .letras a:active{
+        color: red;
+      }
+
+      .letras{
+        font-family: Verdana, Arial, Tahoma;
+      }
+
+      footer a  {
+        font-family: Verdana, Arial, Tahoma;
+        color: #49c1a2;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="mailto:thealezroc@gmail.com" method="post" enctype="Text/plain">
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Regístrate</h1><br>
+        <p>Es gratis solo tomará unos minutos</p>
+        <br>
+        <form>
+          <div class="form-group">
+            <label for="first-name">Nombre</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="last-name">Apellido</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="password2">Confirmar Contraseña</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <br>
+          <button type="submit" class="btn">Regístrate</button>
+          <br>
+          <p class="bottom-text">
+            Presionando Regístrate, estas de acuerdo a
+            <a href="#">Términos & Condiciones</a> y
+            <a href="#">Política de Privacidad</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <br>
+        <p class="letras">Ya tienes cuenta? <a href="#">Inicia Sesión aquí</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
